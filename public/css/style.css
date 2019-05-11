@@ -1,0 +1,174 @@
+:root{
+    --primario:#71b100;
+    --primarios:#e08709;
+    --secundario:#e08709;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 300;
+}
+
+
+/*Header*/
+
+.bg-success{
+    background-color: var(--primario)!important;
+}
+/*slider*/
+@media (min-width: 768px){
+    .barra.bg-success{
+        background-color: transparent!important;
+    }
+
+    .header{
+        position: relative;
+    }
+
+    .header .barra{
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+    }
+}
+
+/*navbar*/
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.navbar-brand span{
+    font-weight: 900;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*Dropdown*/
+
+.dropdown-menu{
+   background-color: var(--primario)!important; 
+}
+
+.dropdown-menu .dropdown-item{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: var(--secundario)!important; 
+}
+
+/*Caption*/
+.carousel.caption h3{
+    font-size: 2.4rem;
+}
+
+.btn-warning{
+    background-color: var(--secundario)!important; 
+    color: #fff;
+    border-color: var(--secundario)!important; 
+    font-weight: 700;
+}
+
+/*Nosotros*/
+.sobre-nosotros h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*Anuncios*/
+
+.anuncios .card{
+    margin-bottom: 2rem;
+}
+
+.card-precio{
+    font-size: 1.2rem;
+    color: var(--primario)!important;
+}
+
+.card-descripcion img{
+    margin-right: .5rem;
+}
+
+/*Encuentra*/
+.encuentra{
+    background-image: url(../img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encuentra .row{
+    height: 22rem;
+}
+
+.encuentra h3{
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+/*Blog*/
+.entrada h3::after{
+    content: '';
+    display: block;
+    width: 8rem;
+    height: .2rem;
+    background-color: var(--primario)!important;
+    margin-top: .5rem;
+}
+
+.meta span{
+    color: var(--secundario)!important;
+}
+
+.btn-success{
+    background-color: var(--primario)!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:.5rem 2.5rem;
+}
+
+/*Testimoniales*/
+.testimoniales{
+    background-color: var(--primario)!important;
+    color:#fff;
+}
+.testimoniales .carousel-item{
+    padding-left: 2rem;
+}
+
+.testimoniales .testimonial-texto{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+}
+
+.testimoniales .testimonial-texto:before{
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top:1rem;
+    font-weight: 900;
+}
+
+.testimoniales span{
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+/*Testimoniales*/
+.footer.bg-dark{
+    background-color: #333!important;
+}
+
+.footer .nav-link{
+    color: #fff;
+    text-transform: uppercase;
+}
